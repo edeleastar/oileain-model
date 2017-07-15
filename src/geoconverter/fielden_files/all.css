@@ -1,0 +1,146 @@
+/*
+fieldenmaps stylesheet
+
+Copyright © 2007-2012 Ed Fielden
+Version: 1.25
+Revision Date: 27 April 2012
+*/
+
+
+p {margin: 1em 0 0; }
+hr {margin: 6pt 0 6pt; padding: 0;}
+
+
+/* MAIN BODY STYLES */
+
+   html {margin: 0; padding: 0}
+   body.info {font-family: 'Verdana', 'Arial', sans-serif; font-size: 9pt; background-color: white; color: black; margin: 0; padding: 10px}
+   body.home {font-family: 'Verdana', 'Arial', sans-serif; font-size: 9pt; background-color: white; color: black; margin: 0; padding: 10px}
+
+/* H-TAG STYLES */
+
+   H1 {display: inline; font-size: 1pt; color: white; padding: 0px}
+   H2 {display: inline; font-size: 1pt; color: white; padding: 0px}
+
+
+/* STYLE FOR LINKS */
+
+   a:link {color: #000099; text-decoration: underline}
+   a:visited {color: #000099; text-decoration: underline}
+   a:hover {color: #009933; text-decoration: underline}
+
+
+/* NAVBAR STYLE */
+
+   table.navbar {font-size: 8pt; border-collapse: collapse}
+
+   td.borderbar {background-color: black; padding: 3px}
+   td.topbar {background-color: #CCCCCC; border-top: solid #000000 1px; border-left: solid #000000 3px; border-right: solid #000000 3px; padding: 3px 0px 3px 0px; font-size: 8pt; text-align: center}
+   td.botbar {background-color: #E7E7E7; border-bottom: solid #000000 1px; border-left: solid #000000 3px; border-right: solid #000000 3px; padding: 3px 7px 3px 7px}
+
+   font.navwebtitle {color: #0033FF; font-size: 8pt; font-weight: bold}
+   font.navhere {color: #000000; font-size: 8pt; font-weight: bold; font-style: italic}
+   font.navnav {color: #000099; font-size: 8pt; font-weight: normal; font-style: italic}
+   font.navlevel {color: #000000; font-size: 8pt}
+   font.navloc {color: #000099; font-size: 8pt; font-weight: bold}
+   font.navmsg {color: #000000; font-size: 8pt; font-weight: normal}
+
+   a.nav:link {color: #000099; text-decoration: none; border-bottom: 1px dotted #000099}
+   a.nav:visited {color: #000099; text-decoration: none; border-bottom: 1px dotted #000099}
+   a.nav:hover {color: #009933; text-decoration: none; border-bottom: 1px solid #009933}
+
+
+/* STYLE FOR INFO PAGE CAPTIONS & CITATIONS */
+
+   font.cap1 {font-size: 8pt; font-weight: bold; font-style: italic}
+   font.cap2 {font-size: 8pt; font-weight: normal}
+     font.cap2cred {font-size: 8pt; font-weight: normal; font-style: italic}
+   font.cap3 {font-size: 8pt; font-weight: bold}
+   font.cap4 {font-size: 8pt; font-weight: normal}
+   font.cit  {font-size: 9pt; font-weight: bold; font-style: italic}
+   font.printcode     {font-style: italic}
+   font.printcodelr   {font-family: 'Arial', sans-serif; font-size: 9pt; font-style: italic; color: #0066CC}
+   font.printcodelrdk {font-family: 'Arial', sans-serif; font-size: 9pt; font-style: italic; color: #000066}
+
+
+
+/* GENERAL DIV STYLES */
+
+
+   div.pagemain {width: 732px; padding: 0; margin-left: auto; margin-right: auto}
+   div.pagemaininfo {width: 732px; padding: 0; text-align: justify; margin: 8pt auto 8pt; clear: both}
+   div.pageinfodata {width: 692px; padding: 0 20px 0; text-align: justify; margin: 8pt auto 8pt; clear: both}
+   div.linkstitle {margin: 12pt auto 1pt; padding: 3pt 5pt 3pt; font-size: 10pt; font-weight: bold; text-align: left; color: #009933; border-top: 2px solid #003399; border-bottom: 1px solid #99B7FF; background-color: #F3F7FF}
+   div.linkscontent {margin: 1pt auto 8pt; padding: 2pt 5pt 1pt; font-size: 10pt; font-weight: normal; color: #000000; border: none; text-align: left}
+   div.linkscontent span {margin: 0 0 0 12pt; padding: 0}
+
+   div.bibliotitle {margin: 12pt auto 1pt; padding: 3pt 5pt 3pt; font-size: 10pt; font-weight: bold; text-align: left; color: #009933; border-top: 2px solid #003399; border-bottom: 1px solid #99B7FF; background-color: #F3F7FF}
+   div.bibliocontent {margin: 1pt auto 8pt; padding: 2pt 5pt 1pt; font-size: 10pt; font-weight: normal; color: #000000; border: none; text-align: left}
+   div.biblioitem {margin-top: 5pt; padding: 0; font-size: 10pt; font-weight: bold}
+   table.bibliodata {border-collapse: collapse; font-size: 8pt; margin-top: 1pt; font-weight: normal}
+   table.bibliodata td.bdhead {font-style: italic; text-align: right; padding: 0 2px 1px 5px}
+   table.bibliodata td.bdinfo {font-style: normal; text-align: left; padding: 0 2px 1px 4px}
+
+
+/* STYLE FOR PRINT CODES TABLE */
+
+   table.printcode        { border-collapse: collapse; border: 2px solid #000099; font-size: 9pt; color: #000000 }
+   table.printcode td     { padding: 4px; border-bottom: 2px solid #000099 }
+   table.printcode td img { vertical-align: top; padding: 2px 0 0 }
+   table.printcode p      { margin-top: 3pt }
+   table.printcode td.pic { width: 352px; border-left: 1px solid #000099; font-size: 8pt; font-weight: bold; font-style: italic; text-align: center; vertical-align: middle}
+   table.printcode td.pic img { border: 1px dotted #000099; padding: 0 }
+
+
+/* STYLE FOR 'UPDATED' ENTRIES */
+
+   font.infoupd {font-size: 8pt; color: #006633}
+   font.mainupd {font-size: 9pt; color: #006633}
+
+
+/* STYLE FOR TITLES */
+
+   div.pageheader {width: 720px; margin: 6pt auto 8pt; text-align: center; background-color: #F3F7FF; border: solid #003399 1px; padding: 7px 5px 7px; }     /* LISTING PAGE TITLE SECTION */
+
+   font.infotitle {font-size: 11pt; font-weight: bold; text-decoration: underline}
+   font.infotitle2 {font-size: 11pt; font-weight: bold; text-decoration: none}
+   font.infotitle3 {font-size: 11pt; font-weight: normal; text-decoration: none}
+   font.pagetitle {font-size: 12pt; font-weight: bold; text-decoration: underline}
+   font.pagesubtitle {font-size: 11pt; font-weight: bold}
+   font.pagesubheading {font-size: 10pt; font-weight: bold}
+
+
+/* STYLE FOR INFO PAGES */
+
+   div.datatbl_l {margin: 6pt 0 10pt; width: 335px; padding: 0; float: left }
+   div.datatbl_r {margin: 6pt 0 10pt; width: 335px; padding: 0; float: right }
+   table.data {border: none; border-collapse: collapse; margin: 0; width: 335px }
+   table.data td.titl {vertical-align: top; border: solid #999999 1px; font-size: 9pt; text-align: center; font-weight: bold; padding: 1px 6px 1px; background-color: #F3F7FF}
+   table.data td.hdga {vertical-align: top; padding: 5px 5px 1px 11px; text-align: right; font-size: 8pt; font-weight: bold }
+   table.data td.dtaa {vertical-align: top; padding: 5px 11px 1px 5px; text-align: left; font-size: 8pt }
+   table.data td.hdgm {vertical-align: top; padding: 0 5px 1px 11px; text-align: right; font-size: 8pt; font-weight: bold }
+   table.data td.dtam {vertical-align: top; padding: 0 11px 1px 5px; text-align: left; font-size: 8pt }
+   table.data td.hdgz {vertical-align: top; padding: 0 5px 9px 11px; text-align: right; font-size: 8pt; font-weight: bold }
+   table.data td.dtaz {vertical-align: top; padding: 0 11px 9px 5px; text-align: left; font-size: 8pt }
+
+   p.hdg {clear: both; margin: 2em 0 0; width: auto; font-weight: bold; text-align: center; padding: 2px; background-color: #F3F7FF; border: 1px solid #003399}
+
+   p.infoupd {margin: 2em 0 0; padding: 1em 0 0; width: auto; font-weight: normal; text-align: center; font-size: 8pt; color: #006633; border-top: 1px solid #003399}
+
+   a.ref {text-decoration: none; font-size: 6pt; vertical-align:top}
+
+   table.infoimg {margin: 1em auto 1em; text-align: center; border-collapse: collapse}
+
+   div.thinblue {border-top: 1px solid #003399; border-left: none; border-right: none; border-bottom: none; padding: 8px 0 0; margin: 10pt 0 10pt; text-align: left}
+
+   ul.vhist {margin: 3pt 0 0 12pt; padding: 0; list-style-type: square; text-align: left}
+
+
+
+/* STYLE FOR LR COVERS TABLE */
+   div.lrcoverstitle { width: 650px; color: #0000CC; font-weight: bold; margin: 18pt auto 0; border-bottom: 1px solid #0000CC; padding: 0 0 2pt 0 }
+   table.lrcovers { border-collapse: collapse; font-size: 9pt; color: #000000; margin: 6pt auto 10pt; width: 650px }
+   table.lrcovers td { padding: 2pt 1pt 1pt; vertical-align: top }
+   table.lrcovers td.lrc {font-weight: bold; width: 30px }
+   table.lrcovers td.lrl {color: #999999; width: 30px }
+   table.lrcovers td.lrd {font-weight: bold; width: 82px; text-align: right }

@@ -1,0 +1,11 @@
+node_modules/
+.idea
+*.js
+*.map
+reports
+!src/utilsjs/*.js
+!src/geoconverter/*.js
+!src/geoconverter/fielden_files/*.*
+*.log
+npm-debug.log
+.vscode
