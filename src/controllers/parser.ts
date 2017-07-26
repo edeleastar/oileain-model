@@ -1,13 +1,37 @@
 import * as fs from 'fs';
 import {
+  generateSafeName,
   isCapitalLetter,
   isGridRef,
   isNumeric,
   normalizeGridref,
 } from '../utils/charutils';
-import { PointOfInterest } from '../model/poi';
+import {Grid, PointOfInterest, Coordinates} from '../model/poi';
 const marked = require('../utilsjs/marked');
 
+class POI implements PointOfInterest {
+  name: string;
+  safeName: string;
+  nameHtml: string;
+  costalZone: string;
+  coordinates: Coordinates;
+  cursor: number;
+  description: string;
+
+  constructor(name: string, grid: Grid, cursor: number) {
+    this.name = name;
+    this.nameHtml = marked(name);
+    this.safeName = generateSafeName(name);
+    const coordinates = {
+      irishGrid: grid,
+      fullIrishGrid: {sheet:'', eastings:0, northings:0},
+      tmcGrid: {sheet:'', eastings:0, northings:0},
+      geo: {lat:0, long:0}
+    }
+    this.coordinates = coordinates;
+    this.cursor = cursor;
+  }
+}
 
 export class Parser {
   content: string;
@@ -53,9 +77,7 @@ export class Parser {
           if (prevToken.endsWith('**')) {
             const poiName = this.getPoiName(index - 1);
             i++;
-            this.pois.push(
-              new PointOfInterest(poiName[0], gridRef, poiName[1]),
-            );
+            this.pois.push(new POI(poiName[0], gridRef, poiName[1]));
           }
         }
       }
