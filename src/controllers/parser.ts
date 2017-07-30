@@ -4,7 +4,7 @@ import {
   isCapitalLetter,
   isGridRef,
   isNumeric,
-  normalizeGridref,
+  normalizeGridref, simplifyName,
 } from '../utils/charutils';
 import {Grid, PointOfInterest, Coordinates} from '../model/poi';
 const marked = require('../utilsjs/marked');
@@ -19,7 +19,7 @@ class POI implements PointOfInterest {
   description: string;
 
   constructor(name: string, grid: Grid, cursor: number) {
-    this.name = name;
+    this.name = simplifyName(name);
     this.nameHtml = marked(name);
     this.safeName = generateSafeName(name);
     const coordinates = {
