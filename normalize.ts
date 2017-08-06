@@ -8,6 +8,6 @@ coasts = require('./src/model/json/oileain-all-geo.json');
 
 //generateEachCoast(coasts, './src/model/json/api');
 
-//generateAllSlim(coasts, './src/model/json/api/oileain-all-slim.json');
-generateAllIslands(coasts, './src/model/json/api');
+generateAllSlim(coasts, './src/model/json/api/oileain-all-slim.json');
+//generateAllIslands(coasts, './src/model/json/api');
 
