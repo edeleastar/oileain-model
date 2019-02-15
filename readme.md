@@ -1,3 +1,3 @@
-node nightwatch-config.js
+node nightwatch-config.json
 
-node_modules/.bin/nightwatch --config nightwatch-config.js
+node_modules/.bin/nightwatch --config nightwatch-config.json

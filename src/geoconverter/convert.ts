@@ -1,6 +1,6 @@
 import {Coast, Coordinates, Grid} from "../model/poi";
 
-const config = require('../../nightwatch-config.js');
+//const config = require('../../nightwatch-config.json');
 const fs = require('fs');
 
 let coasts: Array<Coast>;

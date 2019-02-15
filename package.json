@@ -8,25 +8,11 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-
-    "@types/commander": "^2.9.0",
-    "@types/node": "^7.0.22",
-    "@types/progress": "^2.0.0",
-    "@types/shelljs": "^0.7.1",
-    "glob": "^7.0.3",
-    "marked": "^0.3.5",
-    "path": "^0.12.7",
-    "sanitize-filename": "^1.6.1",
-    "shelljs": "^0.7.7",
-
-
-    "env2": "^2.2.0",
-    "nightwatch": "^0.9.16",
-    "selenium-download": "^2.0.10"
+  "dependencies": {
+    "nightwatch": "^1.0.19"
   },
   "devDependencies": {
+    "chromedriver": "^2.46.0",
     "tslint": "^5.3.2",
     "typescript": "^2.3.4"
   }

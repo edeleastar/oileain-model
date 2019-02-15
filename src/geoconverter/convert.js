@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const config = require('../../nightwatch-config.js');
+//const config = require('../../nightwatch-config.js');
 const fs = require('fs');
 let coasts;
 coasts = require('../model/json/oileain-all.json');
